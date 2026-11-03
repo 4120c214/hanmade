@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>織心手作｜購物車</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<script src="./app.js"></script>
+<body>
+
+<header>
+    <a href="./index.html" class="logo">
+        <img src="./images/logo.png" alt="織心手作 Logo">
+        <span>織心手作</span>
+    </a>
+    <nav>
+        <a href="./index.html">首頁</a>
+        <a href="./product.html">商品商城</a>
+        <a href="./shop.html">購物說明</a>
+        <a href="./orders.html">訂單查詢</a>
+        <a href="./cart.html">🛒 購物車 <span id="cart-count">0</span></a>
+    </nav>
+</header>
+
+<main>
+    <section class="page-banner">
+        <p class="eyebrow">MY SHOPPING CART</p>
+        <h1>購物車</h1>
+        <p>確認您喜歡的手作商品。</p>
+    </section>
+
+    <section class="shopping-section">
+        <div id="cart-items"></div>
+
+        <div class="cart-summary">
+            <h2>訂單金額</h2>
+            <p>商品總金額：<strong id="cart-total">NT$ 0</strong></p>
+            <a href="./product.html" class="button secondary-button">繼續購物</a>
+            <a href="./checkout.html" class="button">前往結帳</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>✿ 織心手作</p>
+    <p>© 2026 織心手作 All Rights Reserved.</p>
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>
