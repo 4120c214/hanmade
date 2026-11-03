@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>織心手作｜結帳</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<script src="./app.js"></script>
+<body>
+
+<header>
+    <a href="./index.html" class="logo">
+        <img src="./images/logo.png" alt="織心手作 Logo">
+        <span>織心手作</span>
+    </a>
+    <nav>
+        <a href="./index.html">首頁</a>
+        <a href="./product.html">商品商城</a>
+        <a href="./cart.html">🛒 購物車</a>
+        <a href="./orders.html">訂單查詢</a>
+    </nav>
+</header>
+
+<main>
+    <section class="page-banner">
+        <p class="eyebrow">CHECKOUT</p>
+        <h1>訂單結帳</h1>
+        <p>請填寫收件資料，完成訂購。</p>
+    </section>
+
+    <section class="shopping-section">
+        <div class="checkout-box">
+            <h2>收件人資料</h2>
+
+            <form id="checkout-form">
+                <label for="customer-name">收件人姓名</label>
+                <input type="text" id="customer-name" placeholder="請輸入姓名" required>
+
+                <label for="customer-phone">聯絡電話</label>
+                <input type="tel" id="customer-phone" placeholder="請輸入手機號碼" required>
+
+                <label for="customer-address">收件地址</label>
+                <textarea id="customer-address" placeholder="請輸入完整收件地址" required></textarea>
+
+                <label for="payment-method">付款方式</label>
+                <select id="payment-method" required>
+                    <option value="">請選擇付款方式</option>
+                    <option value="貨到付款（模擬）">貨到付款（模擬）</option>
+                    <option value="銀行轉帳（模擬）">銀行轉帳（模擬）</option>
+                    <option value="超商取貨付款（模擬）">超商取貨付款（模擬）</option>
+                </select>
+
+                <h2>商品明細</h2>
+                <div id="checkout-items"></div>
+
+                <div class="checkout-total">
+                    訂單總金額：
+                    <strong id="checkout-total">NT$ 0</strong>
+                </div>
+
+                <button type="submit" class="button submit-order">
+                    確認下單
+                </button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>✿ 織心手作</p>
+    <p>© 2026 織心手作 All Rights Reserved.</p>
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>
