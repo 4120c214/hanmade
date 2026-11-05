@@ -6,7 +6,7 @@
 <title>織心手作｜首頁</title>
 <link rel="stylesheet" href="./styles.css">
 </head>
-<script src="./app.js"></script>
+
 <body>
 
 <header>
@@ -15,7 +15,7 @@
         <img src="./images/logo.png" alt="織心手作 Logo">
         <span>織心手作</span>
     </a>
-    
+
     <!-- Menu ở giữa -->
     <nav>
         <a href="./index.html">首頁</a>
@@ -24,14 +24,36 @@
         <a href="./shop.html">購物說明</a>
         <a href="./contact.html">聯絡我們</a>
     </nav>
-    
-    <!-- Giỏ hàng bên phải -->
-    <a href="./cart.html" class="cart-link">
-        🛒 購物車 <span id="cart-count">0</span>
-    </a>
+
+    <!-- Bên phải: thành viên và giỏ hàng -->
+    <div class="header-right">
+
+        <!-- Thành viên -->
+        <div class="member-area">
+            <a href="./member.html" class="member-link">
+                👤 會員中心
+            </a>
+
+            <a href="./login.html" class="login-link">
+                登入
+            </a>
+
+            <a href="./register.html" class="register-link">
+                註冊
+            </a>
+        </div>
+
+        <!-- Giỏ hàng -->
+        <a href="./cart.html" class="cart-link">
+            🛒 購物車
+            <span id="cart-count">0</span>
+        </a>
+
+    </div>
 </header>
 
 <main>
+
 <section class="hero">
     <div class="hero-content">
         <p class="eyebrow">KNITTED WITH LOVE</p>
@@ -52,6 +74,7 @@
         </p>
         <a href="./about.html" class="button">認識我們</a>
     </div>
+
     <img src="./images/06.jpg" alt="毛線花束">
 </section>
 
@@ -63,6 +86,7 @@
     </div>
 
     <div class="product-grid">
+
         <article class="product-card">
             <img src="./images/01.jpg" alt="編織包">
             <div class="product-info">
@@ -89,6 +113,7 @@
                 <div class="price">NT$ 580</div>
             </div>
         </article>
+
     </div>
 
     <div class="center">
@@ -102,6 +127,7 @@
     <p>挑選商品、了解購物方式，讓每一份手作溫暖你的生活。</p>
     <a href="./shop.html" class="button">查看購物說明</a>
 </section>
+
 </main>
 
 <footer>
@@ -109,6 +135,8 @@
     <p>用一針一線，編織日常的溫柔。</p>
     <p>© 2026 織心手作 All Rights Reserved.</p>
 </footer>
+
+<script src="./app.js"></script>
 
 </body>
 </html>
